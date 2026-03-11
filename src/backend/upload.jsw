@@ -1,0 +1,30 @@
+import { mediaManager } from 'wix-media-backend';
+
+export async function uploadImageToMedia(imageDataUrl, fileName) {
+    try {
+        // On enlève l'en-tête "data:image/png;base64," pour ne garder que le code de l'image
+        const buffer = Buffer.from(imageDataUrl.split(",")[1], 'base64');
+
+        // On envoie l'image dans le gestionnaire de médias Wix
+        const uploadedImage = await mediaManager.upload(
+            "/Visiteurs", // Dossier virtuel (optionnel)
+            buffer,
+            fileName,
+            {
+                "mediaOptions": {
+                    "mimeType": "image/png",
+                    "mediaType": "image"
+                },
+                "metadataOptions": {
+                    "isPrivate": false,
+                    "isVisitorUpload": true
+                }
+            }
+        );
+
+        return uploadedImage.fileUrl; 
+    } catch (error) {
+        console.error("Erreur Backend Upload:", error);
+        throw new Error("Echec de l'upload: " + error);
+    }
+}
