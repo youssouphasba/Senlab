@@ -1,30 +1,62 @@
 import { mediaManager } from 'wix-media-backend';
 
+const IMAGE_DATA_URL_REGEX = /^data:(image\/(?:png|jpeg|jpg|webp));base64,([A-Za-z0-9+/=\s]+)$/;
+const MAX_IMAGE_SIZE_BYTES = 10 * 1024 * 1024;
+
+function parseImageDataUrl(imageDataUrl) {
+    const matches = typeof imageDataUrl === 'string' ? imageDataUrl.match(IMAGE_DATA_URL_REGEX) : null;
+
+    if (!matches) {
+        throw new Error('Invalid image format. Expected a PNG, JPG, or WEBP data URL.');
+    }
+
+    const mimeType = matches[1] === 'image/jpg' ? 'image/jpeg' : matches[1];
+    const base64Payload = matches[2].replace(/\s+/g, '');
+    const buffer = Buffer.from(base64Payload, 'base64');
+
+    if (!buffer.length) {
+        throw new Error('The uploaded image is empty.');
+    }
+
+    if (buffer.length > MAX_IMAGE_SIZE_BYTES) {
+        throw new Error('The uploaded image exceeds the 10 MB limit.');
+    }
+
+    return { mimeType, buffer };
+}
+
+function sanitizeFileName(fileName) {
+    if (typeof fileName !== 'string') {
+        return `design-${Date.now()}.png`;
+    }
+
+    const safeName = fileName.replace(/[^a-zA-Z0-9._-]+/g, '-').replace(/-+/g, '-');
+
+    return safeName || `design-${Date.now()}.png`;
+}
+
 export async function uploadImageToMedia(imageDataUrl, fileName) {
     try {
-        // On enlève l'en-tête "data:image/png;base64," pour ne garder que le code de l'image
-        const buffer = Buffer.from(imageDataUrl.split(",")[1], 'base64');
-
-        // On envoie l'image dans le gestionnaire de médias Wix
+        const { mimeType, buffer } = parseImageDataUrl(imageDataUrl);
         const uploadedImage = await mediaManager.upload(
-            "/Visiteurs", // Dossier virtuel (optionnel)
+            '/Visiteurs',
             buffer,
-            fileName,
+            sanitizeFileName(fileName),
             {
-                "mediaOptions": {
-                    "mimeType": "image/png",
-                    "mediaType": "image"
+                mediaOptions: {
+                    mimeType,
+                    mediaType: 'image'
                 },
-                "metadataOptions": {
-                    "isPrivate": false,
-                    "isVisitorUpload": true
+                metadataOptions: {
+                    isPrivate: false,
+                    isVisitorUpload: true
                 }
             }
         );
 
-        return uploadedImage.fileUrl; 
+        return uploadedImage.fileUrl;
     } catch (error) {
-        console.error("Erreur Backend Upload:", error);
-        throw new Error("Echec de l'upload: " + error);
+        console.error('Erreur Backend Upload:', error);
+        throw new Error(`Echec de l'upload: ${error.message || error}`);
     }
 }

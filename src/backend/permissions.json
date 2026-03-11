@@ -6,6 +6,19 @@
           "invoke": true
         },
         "siteMember": {
+          "invoke": false
+        },
+        "anonymous": {
+          "invoke": false
+        }
+      }
+    },
+    "backend/upload.jsw": {
+      "uploadImageToMedia": {
+        "siteOwner": {
+          "invoke": true
+        },
+        "siteMember": {
           "invoke": true
         },
         "anonymous": {
