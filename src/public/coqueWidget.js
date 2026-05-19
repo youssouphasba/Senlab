@@ -171,8 +171,8 @@ export function getCoqueWidgetSrc() {
         </div>
         <div class="price">
           <div class="price-label" id="priceLabel">Prix standard</div>
-          <div class="price-current" id="priceCurrent">10,49 EUR</div>
-          <div class="price-old" id="priceOld">14,99 EUR</div>
+          <div class="price-current" id="priceCurrent">14,99 EUR</div>
+          <div class="price-old" id="priceOld"></div>
         </div>
       </div>
       <div class="config">
