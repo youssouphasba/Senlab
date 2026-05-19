@@ -166,8 +166,8 @@ export function getCoqueWidgetSrc() {
       <div class="hero-top">
         <div>
           <div class="eyebrow">Wave Lab · Coques sur mesure</div>
-          <h1>Cree ta coque pas a pas</h1>
-          <div class="copy">Choisis le modele, ajoute photo, texte ou motif, puis envoie un rendu propre au panier sans quitter la page.</div>
+          <h1>Crée ta coque pas à pas</h1>
+          <div class="copy">Choisis le modèle, ajoute une photo, du texte ou un motif, puis envoie un rendu propre au panier sans quitter la page.</div>
         </div>
         <div class="price">
           <div class="price-label" id="priceLabel">Prix standard</div>
@@ -176,10 +176,10 @@ export function getCoqueWidgetSrc() {
         </div>
       </div>
       <div class="config">
-        <div class="section">01 Modele</div>
+        <div class="section">01 Modèle</div>
         <div class="brand-strip" id="brandStrip"></div>
-        <div class="picked" id="pickedModel">Aucun modele selectionne</div>
-        <input id="searchModel" class="search" type="search" placeholder="Chercher un modele">
+        <div class="picked" id="pickedModel">Aucun modèle sélectionné</div>
+        <input id="searchModel" class="search" type="search" placeholder="Chercher un modèle">
         <div class="models" id="modelGrid"></div>
       </div>
     </section>
@@ -187,16 +187,16 @@ export function getCoqueWidgetSrc() {
       <div class="stage-top">
         <div class="summary">
           <div class="section">02 Design</div>
-          <strong id="summaryTitle">Selectionne un modele pour commencer</strong>
+          <strong id="summaryTitle">Sélectionne un modèle pour commencer</strong>
           <span id="summaryText">Ajoute ensuite photo, texte, stickers ou motifs.</span>
         </div>
-        <div class="origin hide" id="origin">Fabriquee en France</div>
+        <div class="origin hide" id="origin">Fabriquée en France</div>
       </div>
       <div class="stage-body">
         <div class="phone" id="phone">
           <div id="design"></div>
-          <img id="case" alt="Apercu coque">
-          <div class="helper" id="helper">Commence par choisir ton modele, puis ajoute une photo ou un motif.</div>
+          <img id="case" alt="Aperçu coque">
+          <div class="helper" id="helper">Commence par choisir ton modèle, puis ajoute une photo ou un motif.</div>
         </div>
       </div>
     </section>
@@ -206,7 +206,7 @@ export function getCoqueWidgetSrc() {
           <div class="section">03 Personnalise</div>
           <strong>Tout se fait sur la coque</strong>
         </div>
-        <div class="mini" id="countInfo">0 element</div>
+        <div class="mini" id="countInfo">0 élément</div>
       </div>
       <div class="tool-grid">
         <button class="tool" data-act="backgrounds"><b>Fond</b><strong>Couleurs</strong></button>
@@ -228,7 +228,7 @@ export function getCoqueWidgetSrc() {
     <div class="sheet">
       <div class="head">
         <div>
-          <div class="title">Modifier l'element</div>
+          <div class="title">Modifier l'élément</div>
           <div class="sub">Ajuste la taille, la couleur ou l'ordre.</div>
         </div>
         <button class="ghost" data-close="editorLayer">Fermer</button>
@@ -252,9 +252,9 @@ export function getCoqueWidgetSrc() {
         </div>
         <div class="rows" style="margin-top:8px">
           <button class="soft" id="frontBtn">Passer devant</button>
-          <button class="soft" id="backBtn">Passer derriere</button>
+          <button class="soft" id="backBtn">Passer derrière</button>
         </div>
-        <button class="danger" id="removeBtn">Supprimer l'element</button>
+        <button class="danger" id="removeBtn">Supprimer l'élément</button>
       </div>
     </div>
   </div>
@@ -263,8 +263,8 @@ export function getCoqueWidgetSrc() {
     <div class="sheet">
       <div class="head">
         <div>
-          <div class="title" id="pickerTitle">Bibliotheque</div>
-          <div class="sub" id="pickerSub">Ajoute un element a ton design.</div>
+          <div class="title" id="pickerTitle">Bibliothèque</div>
+          <div class="sub" id="pickerSub">Ajoute un élément à ton design.</div>
         </div>
         <button class="ghost" data-close="pickerLayer">Fermer</button>
       </div>
@@ -282,7 +282,7 @@ export function getCoqueWidgetSrc() {
       <div class="head">
         <div>
           <div class="title">Traitement photo</div>
-          <div class="sub">Choisis le rendu a imprimer pour ta photo.</div>
+          <div class="sub">Choisis le rendu à imprimer pour ta photo.</div>
         </div>
         <button class="ghost" data-close="styleLayer">Fermer</button>
       </div>
@@ -300,9 +300,9 @@ export function getCoqueWidgetSrc() {
     const DATA=__DATA__,ASSETS=__ASSETS__,DEFAULTS=__DEFAULTS__,EMOJI='https://cdn.jsdelivr.net/npm/emoji-datasource-apple@15.0.0/img/apple/64/',CFA=655.957;
     const PICKERS={
       backgrounds:{title:'Fonds',sub:'Couleurs, gradients et textures.',tabs:[['solid','Couleurs','background',ASSETS.bg.solid],['gradient','Gradients','background',ASSETS.bg.gradient],['texture','Textures','background',ASSETS.bg.texture]]},
-      stickers:{title:'Stickers',sub:'Emoji, drapeaux et vibes a superposer.',tabs:[['emoji','Emoji','emoji',ASSETS.stickers.emoji],['africa','Afrique','emoji',ASSETS.stickers.africa],['europe','Europe','emoji',ASSETS.stickers.europe]]},
-      motifs:{title:'Motifs',sub:'Des images pleine coque pour donner un ton immediat.',tabs:[['nature','Nature','cover',ASSETS.motifs.nature],['animals','Animaux','cover',ASSETS.motifs.animals],['abstract','Abstrait','cover',ASSETS.motifs.abstract],['urban','Urban','cover',ASSETS.motifs.urban]]},
-      clubs:{title:'Clubs',sub:'Logos a poser comme stickers.',tabs:[['france','France','logo',ASSETS.clubs.france],['europe','Europe','logo',ASSETS.clubs.europe]]}
+      stickers:{title:'Stickers',sub:'Emoji, drapeaux et vibes à superposer.',tabs:[['emoji','Emoji','emoji',ASSETS.stickers.emoji],['africa','Afrique','emoji',ASSETS.stickers.africa],['europe','Europe','emoji',ASSETS.stickers.europe]]},
+      motifs:{title:'Motifs',sub:'Des images pleine coque pour donner un ton immédiat.',tabs:[['nature','Nature','cover',ASSETS.motifs.nature],['animals','Animaux','cover',ASSETS.motifs.animals],['abstract','Abstrait','cover',ASSETS.motifs.abstract],['urban','Urban','cover',ASSETS.motifs.urban]]},
+      clubs:{title:'Clubs',sub:'Logos à poser comme stickers.',tabs:[['france','France','logo',ASSETS.clubs.france],['europe','Europe','logo',ASSETS.clubs.europe]]}
     };
     const S={brand:'',model:'',sn:false,sel:null,drag:null,temp:'',picker:'',tab:'',timer:null};
     const E={
@@ -317,10 +317,10 @@ export function getCoqueWidgetSrc() {
     function countEls(){return E.design.querySelectorAll('.item').length}
     function hasBg(){const i=E.design.style.backgroundImage,c=E.design.style.backgroundColor;return i&&i!=='none'||c&&c!=='transparent'&&c!=='rgba(0, 0, 0, 0)'}
     function hasDesign(){return hasBg()||countEls()>0}
-    function syncNote(){const n=countEls();E.count.textContent=n+' '+(n>1?'elements':'element');if(!S.model){E.helper.textContent='Commence par choisir ton modele, puis ajoute une photo ou un motif.';return}if(!hasDesign()){E.helper.textContent='Modele pret. Ajoute une photo, un fond, un sticker ou du texte.';return}if(S.sel){E.helper.textContent='Element selectionne. Fais-le glisser, redimensionne-le ou change sa couleur.';return}E.helper.textContent=(n>0?n+' element'+(n>1?'s':'')+' en place. ':'')+'Tu peux encore ajouter motifs, logos ou stickers.'}
+    function syncNote(){const n=countEls();E.count.textContent=n+' '+(n>1?'éléments':'élément');if(!S.model){E.helper.textContent='Commence par choisir ton modèle, puis ajoute une photo ou un motif.';return}if(!hasDesign()){E.helper.textContent='Modèle prêt. Ajoute une photo, un fond, un sticker ou du texte.';return}if(S.sel){E.helper.textContent='Élément sélectionné. Fais-le glisser, redimensionne-le ou change sa couleur.';return}E.helper.textContent=(n>0?n+' élément'+(n>1?'s':'')+' en place. ':'')+'Tu peux encore ajouter motifs, logos ou stickers.'}
     function models(){if(!S.brand||!DATA[S.brand])return[];const q=E.search.value.trim().toLowerCase();return Object.keys(DATA[S.brand]).filter(function(m){return !q||m.toLowerCase().indexOf(q)!==-1})}
     function renderBrands(){E.brandStrip.innerHTML='';Object.keys(DATA).forEach(function(b){const x=document.createElement('button');x.type='button';x.className='chip'+(b===S.brand?' active':'');x.textContent=b;x.onclick=function(){setBrand(b)};E.brandStrip.appendChild(x)})}
-    function renderModels(){const list=models();E.modelGrid.innerHTML='';if(!list.length){const x=document.createElement('div');x.className='empty';x.textContent='Aucun modele ne correspond a ta recherche.';E.modelGrid.appendChild(x);return}list.forEach(function(m){const x=document.createElement('button');x.type='button';x.className='model'+(m===S.model?' active':'');x.textContent=m;x.onclick=function(){setModel(m)};E.modelGrid.appendChild(x)})}
+    function renderModels(){const list=models();E.modelGrid.innerHTML='';if(!list.length){const x=document.createElement('div');x.className='empty';x.textContent='Aucun modèle ne correspond à ta recherche.';E.modelGrid.appendChild(x);return}list.forEach(function(m){const x=document.createElement('button');x.type='button';x.className='model'+(m===S.model?' active':'');x.textContent=m;x.onclick=function(){setModel(m)};E.modelGrid.appendChild(x)})}
     function applyModel(){if(!S.brand||!S.model||!DATA[S.brand]||!DATA[S.brand][S.model])return;const c=DATA[S.brand][S.model];E.caseImg.crossOrigin='anonymous';E.caseImg.src=c[0];E.phone.style.borderRadius=c[1];E.picked.textContent=S.brand+' · '+S.model;E.summaryTitle.textContent=S.model;E.summaryText.textContent='Personnalise maintenant avec photo, texte, stickers, motifs ou logos.';syncNote()}
     function setBrand(b,p){S.brand=b;E.search.value='';const list=Object.keys(DATA[b]||{});if(!list.length){S.model=''}else if(p&&list.indexOf(p)!==-1){S.model=p}else if(list.indexOf(S.model)===-1){S.model=list[0]}renderBrands();renderModels();applyModel()}
     function setModel(m){S.model=m;renderModels();applyModel()}
@@ -330,28 +330,28 @@ export function getCoqueWidgetSrc() {
     function addText(v){const p=pos(140),n=document.createElement('div');n.className='item txt';n.textContent=v;n.style.left=p.x+'px';n.style.top=p.y+'px';n.style.fontSize='30px';n.style.fontFamily='Archivo Black';n.style.color='#111111';E.design.appendChild(n);pick(n)}
     function addImage(src,w,meta){const width=parseInt(w,10)||120,p=pos(width),n=document.createElement('img');n.className='item img';n.crossOrigin='anonymous';n.src=src;n.style.width=w;n.style.left=p.x+'px';n.style.top=p.y+'px';if(meta&&meta.treatment)n.dataset.treatment=meta.treatment;if(meta&&meta.origin)n.dataset.origin=meta.origin;E.design.appendChild(n);pick(n)}
     function editText(){if(!S.sel||!S.sel.classList.contains('txt'))return;const v=window.prompt('Modifie ton texte',S.sel.textContent||'');if(!v)return;S.sel.textContent=v.trim();syncNote()}
-    function duplicate(){if(!S.sel){toast('Selectionne un element a dupliquer.','error');return}const n=S.sel.cloneNode(true);n.style.left=((parseInt(S.sel.style.left,10)||0)+18)+'px';n.style.top=((parseInt(S.sel.style.top,10)||0)+18)+'px';E.design.appendChild(n);pick(n)}
+    function duplicate(){if(!S.sel){toast('Sélectionne un élément à dupliquer.','error');return}const n=S.sel.cloneNode(true);n.style.left=((parseInt(S.sel.style.left,10)||0)+18)+'px';n.style.top=((parseInt(S.sel.style.top,10)||0)+18)+'px';E.design.appendChild(n);pick(n)}
     function removeSel(){if(!S.sel)return;S.sel.remove();pick(null);syncNote()}
     function front(){if(!S.sel)return;E.design.appendChild(S.sel);pick(S.sel)}
     function back(){if(!S.sel)return;E.design.insertBefore(S.sel,E.design.firstChild);pick(S.sel)}
-    function reset(){E.design.innerHTML='';E.design.style.backgroundColor='transparent';E.design.style.backgroundImage='none';E.design.style.backgroundSize='cover';E.design.style.backgroundRepeat='no-repeat';E.design.style.backgroundPosition='center';pick(null);syncNote();toast('Design reinitialise.','success')}
+    function reset(){E.design.innerHTML='';E.design.style.backgroundColor='transparent';E.design.style.backgroundImage='none';E.design.style.backgroundSize='cover';E.design.style.backgroundRepeat='no-repeat';E.design.style.backgroundPosition='center';pick(null);syncNote();toast('Design réinitialisé.','success')}
     function applyBg(item){if(item[1]==='color'){E.design.style.backgroundColor=item[2];E.design.style.backgroundImage='none';E.design.style.backgroundSize='cover';E.design.style.backgroundRepeat='no-repeat';E.design.style.backgroundPosition='center'}else if(item[1]==='gradient'){E.design.style.backgroundColor='transparent';E.design.style.backgroundImage=item[2];E.design.style.backgroundSize='cover';E.design.style.backgroundRepeat='no-repeat';E.design.style.backgroundPosition='center'}else if(item[1]==='texture'){E.design.style.backgroundColor=item[4]||'#ffffff';E.design.style.backgroundImage='url("'+item[2]+'")';E.design.style.backgroundSize=item[3]||'220px 220px';E.design.style.backgroundRepeat='repeat';E.design.style.backgroundPosition='center'}else{E.design.style.backgroundColor='transparent';E.design.style.backgroundImage='url("'+item[1]+'")';E.design.style.backgroundSize='cover';E.design.style.backgroundRepeat='no-repeat';E.design.style.backgroundPosition='center'}close('pickerLayer');syncNote();toast((item[0]||'Fond')+' applique.','success')}
     function openPicker(kind){const c=PICKERS[kind];if(!c)return;S.picker=kind;S.tab=kind==='stickers'&&S.sn?'africa':c.tabs[0][0];E.pickerTitle.textContent=c.title;E.pickerSub.textContent=c.sub;renderPicker();open('pickerLayer')}
-    function renderPicker(){const c=PICKERS[S.picker],tab=c.tabs.find(function(x){return x[0]===S.tab})||c.tabs[0];E.tabs.innerHTML='';c.tabs.forEach(function(x){const b=document.createElement('button');b.type='button';b.className='tab'+(x[0]===S.tab?' active':'');b.textContent=x[1];b.onclick=function(){S.tab=x[0];renderPicker()};E.tabs.appendChild(b)});E.assetGrid.innerHTML='';tab[3].forEach(function(item){const b=document.createElement('button'),p=document.createElement('div'),name=document.createElement('div');b.type='button';b.className='asset';p.className='preview';name.className='name';if(tab[2]==='background'){p.classList.add('sw');if(item[1]==='color'){p.style.background=item[2]}else if(item[1]==='gradient'){p.style.backgroundImage=item[2]}else{p.style.backgroundColor=item[4]||'#fff';p.style.backgroundImage='url("'+item[2]+'")';p.style.backgroundSize=item[3]||'220px 220px';p.style.backgroundRepeat='repeat'}b.onclick=function(){applyBg(item)}}else if(tab[2]==='emoji'){p.classList.add('compact');const i=document.createElement('img');i.src=EMOJI+item+'.png';i.loading='lazy';p.appendChild(i);b.onclick=function(){addImage(EMOJI+item+'.png','88px');close('pickerLayer');toast('Sticker ajoute.','success')}}else if(tab[2]==='cover'){const i=document.createElement('img');i.src=item[1];i.loading='lazy';p.appendChild(i);b.onclick=function(){applyBg(item)}}else{p.classList.add('compact');const i=document.createElement('img');i.src=item[1];i.loading='lazy';p.appendChild(i);b.onclick=function(){addImage(item[1],'96px');close('pickerLayer');toast((item[0]||'Logo')+' ajoute.','success')}}name.textContent=typeof item==='string'?' ':(item[0]||' ');b.appendChild(p);b.appendChild(name);E.assetGrid.appendChild(b)})}
+    function renderPicker(){const c=PICKERS[S.picker],tab=c.tabs.find(function(x){return x[0]===S.tab})||c.tabs[0];E.tabs.innerHTML='';c.tabs.forEach(function(x){const b=document.createElement('button');b.type='button';b.className='tab'+(x[0]===S.tab?' active':'');b.textContent=x[1];b.onclick=function(){S.tab=x[0];renderPicker()};E.tabs.appendChild(b)});E.assetGrid.innerHTML='';tab[3].forEach(function(item){const b=document.createElement('button'),p=document.createElement('div'),name=document.createElement('div');b.type='button';b.className='asset';p.className='preview';name.className='name';if(tab[2]==='background'){p.classList.add('sw');if(item[1]==='color'){p.style.background=item[2]}else if(item[1]==='gradient'){p.style.backgroundImage=item[2]}else{p.style.backgroundColor=item[4]||'#fff';p.style.backgroundImage='url("'+item[2]+'")';p.style.backgroundSize=item[3]||'220px 220px';p.style.backgroundRepeat='repeat'}b.onclick=function(){applyBg(item)}}else if(tab[2]==='emoji'){p.classList.add('compact');const i=document.createElement('img');i.src=EMOJI+item+'.png';i.loading='lazy';p.appendChild(i);b.onclick=function(){addImage(EMOJI+item+'.png','88px');close('pickerLayer');toast('Sticker ajouté.','success')}}else if(tab[2]==='cover'){const i=document.createElement('img');i.src=item[1];i.loading='lazy';p.appendChild(i);b.onclick=function(){applyBg(item)}}else{p.classList.add('compact');const i=document.createElement('img');i.src=item[1];i.loading='lazy';p.appendChild(i);b.onclick=function(){addImage(item[1],'96px');close('pickerLayer');toast((item[0]||'Logo')+' ajouté.','success')}}name.textContent=typeof item==='string'?' ':(item[0]||' ');b.appendChild(p);b.appendChild(name);E.assetGrid.appendChild(b)})}
     function ptr(e){return e.touches?e.touches[0]:e}
     function start(e){if(!e.target.classList.contains('item'))return;e.preventDefault();const p=ptr(e),n=e.target;S.drag={n:n,x:p.clientX,y:p.clientY,l:parseInt(n.style.left,10)||0,t:parseInt(n.style.top,10)||0};pick(n)}
     function move(e){if(!S.drag)return;e.preventDefault();const p=ptr(e);S.drag.n.style.left=S.drag.l+(p.clientX-S.drag.x)+'px';S.drag.n.style.top=S.drag.t+(p.clientY-S.drag.y)+'px'}
     function stop(){S.drag=null}
-    function geo(){fetch('https://ipapi.co/json/').then(function(r){return r.json()}).then(function(d){if(!d||d.country_code!=='SN')return;S.sn=true;E.priceLabel.textContent='Prix Senegal';E.priceOld.textContent=Math.ceil(14.99*CFA).toLocaleString('fr-FR')+' FCFA';E.priceCurrent.textContent=Math.ceil(10.49*.8*CFA).toLocaleString('fr-FR')+' FCFA';E.origin.classList.remove('hide');E.origin.textContent='Wave -20% Senegal';E.addLabel.textContent='Commander via Wave / OM'}).catch(function(){return null})}
-    function addToCart(){if(!S.model){toast('Choisis un modele avant de continuer.','error');return}if(!hasDesign()){toast('Ajoute au moins un fond, une photo ou un element.','error');return}pick(null);E.addBtn.classList.add('loading');const up=Array.prototype.slice.call(E.design.querySelectorAll('.img')).find(function(n){return n.dataset&&n.dataset.origin==='upload'}),tr=up&&up.dataset.treatment?up.dataset.treatment:'Normal';html2canvas(E.phone,{backgroundColor:null,scale:2,useCORS:true}).then(function(c){window.parent.postMessage({type:'add_to_cart',image:c.toDataURL('image/png'),modele:S.model,traitement:tr,pays:S.sn?'Senegal':'Autre'},'*');clearTimeout(S.timer);S.timer=setTimeout(function(){E.addBtn.classList.remove('loading');toast('Le panier met plus de temps que prevu. Verifie si besoin.','error')},14000)}).catch(function(){E.addBtn.classList.remove('loading');toast('Impossible de generer le visuel.','error')})}
+    function geo(){fetch('https://ipapi.co/json/').then(function(r){return r.json()}).then(function(d){if(!d||d.country_code!=='SN')return;S.sn=true;E.priceLabel.textContent='Prix Sénégal';E.priceOld.textContent=Math.ceil(14.99*CFA).toLocaleString('fr-FR')+' FCFA';E.priceCurrent.textContent=Math.ceil(10.49*.8*CFA).toLocaleString('fr-FR')+' FCFA';E.origin.classList.remove('hide');E.origin.textContent='Wave -20% Sénégal';E.addLabel.textContent='Commander via Wave / OM'}).catch(function(){return null})}
+    function addToCart(){if(!S.model){toast('Choisis un modèle avant de continuer.','error');return}if(!hasDesign()){toast('Ajoute au moins un fond, une photo ou un élément.','error');return}pick(null);E.addBtn.classList.add('loading');const up=Array.prototype.slice.call(E.design.querySelectorAll('.img')).find(function(n){return n.dataset&&n.dataset.origin==='upload'}),tr=up&&up.dataset.treatment?up.dataset.treatment:'Normal';html2canvas(E.phone,{backgroundColor:null,scale:2,useCORS:true}).then(function(c){window.parent.postMessage({type:'add_to_cart',image:c.toDataURL('image/png'),modele:S.model,traitement:tr,pays:S.sn?'Senegal':'Autre'},'*');clearTimeout(S.timer);S.timer=setTimeout(function(){E.addBtn.classList.remove('loading');toast('Le panier met plus de temps que prévu. Vérifie si besoin.','error')},14000)}).catch(function(){E.addBtn.classList.remove('loading');toast('Impossible de générer le visuel.','error')})}
     document.querySelectorAll('[data-close]').forEach(function(x){x.addEventListener('click',function(){close(x.dataset.close)})});
-    document.querySelectorAll('[data-act]').forEach(function(x){x.addEventListener('click',function(){const a=x.dataset.act;if(a==='backgrounds'||a==='stickers'||a==='motifs'||a==='clubs'){openPicker(a);return}if(a==='photo'){E.file.value='';E.file.click();return}if(a==='text'){const v=window.prompt('Entre ton texte','Wave Family');if(v&&v.trim()){addText(v.trim());toast('Texte ajoute.','success')}}})});
-    document.querySelectorAll('[data-style]').forEach(function(x){x.addEventListener('click',function(){if(!S.temp)return;addImage(S.temp,'136px',{treatment:x.dataset.style,origin:'upload'});S.temp='';close('styleLayer');toast('Photo ajoutee.','success')})});
+    document.querySelectorAll('[data-act]').forEach(function(x){x.addEventListener('click',function(){const a=x.dataset.act;if(a==='backgrounds'||a==='stickers'||a==='motifs'||a==='clubs'){openPicker(a);return}if(a==='photo'){E.file.value='';E.file.click();return}if(a==='text'){const v=window.prompt('Entre ton texte','Wave Family');if(v&&v.trim()){addText(v.trim());toast('Texte ajouté.','success')}}})});
+    document.querySelectorAll('[data-style]').forEach(function(x){x.addEventListener('click',function(){if(!S.temp)return;addImage(S.temp,'136px',{treatment:x.dataset.style,origin:'upload'});S.temp='';close('styleLayer');toast('Photo ajoutée.','success')})});
     E.search.addEventListener('input',renderModels);E.design.addEventListener('click',function(e){e.target.classList.contains('item')?pick(e.target):pick(null)});E.design.addEventListener('mousedown',start);E.design.addEventListener('touchstart',start,{passive:false});window.addEventListener('mousemove',move);window.addEventListener('touchmove',move,{passive:false});window.addEventListener('mouseup',stop);window.addEventListener('touchend',stop);
     E.size.addEventListener('input',function(e){if(!S.sel)return;E.sizeValue.textContent=e.target.value+' px';if(S.sel.classList.contains('txt')){S.sel.style.fontSize=e.target.value+'px'}else{S.sel.style.width=e.target.value+'px'}});E.font.addEventListener('change',function(e){if(S.sel&&S.sel.classList.contains('txt'))S.sel.style.fontFamily=e.target.value});E.color.addEventListener('input',function(e){if(S.sel&&S.sel.classList.contains('txt'))S.sel.style.color=e.target.value});
     document.getElementById('editTextBtn').addEventListener('click',editText);document.getElementById('dupBtn').addEventListener('click',duplicate);document.getElementById('dupInsideBtn').addEventListener('click',duplicate);document.getElementById('frontBtn').addEventListener('click',front);document.getElementById('backBtn').addEventListener('click',back);document.getElementById('removeBtn').addEventListener('click',removeSel);document.getElementById('resetBtn').addEventListener('click',reset);E.addBtn.addEventListener('click',addToCart);
     E.file.addEventListener('change',function(e){const f=e.target.files&&e.target.files[0];if(!f)return;const r=new FileReader();r.onload=function(v){S.temp=v.target.result;open('styleLayer')};r.readAsDataURL(f)});
-    window.addEventListener('message',function(e){const p=e.data||{};if(p.type==='add_to_cart_success'){clearTimeout(S.timer);E.addBtn.classList.remove('loading');toast('Produit ajoute au panier.','success')}if(p.type==='add_to_cart_error'){clearTimeout(S.timer);E.addBtn.classList.remove('loading');toast(p.message||'Une erreur est survenue.','error')}});
+    window.addEventListener('message',function(e){const p=e.data||{};if(p.type==='add_to_cart_success'){clearTimeout(S.timer);E.addBtn.classList.remove('loading');toast('Produit ajouté au panier.','success')}if(p.type==='add_to_cart_error'){clearTimeout(S.timer);E.addBtn.classList.remove('loading');toast(p.message||'Une erreur est survenue.','error')}});
     geo();renderBrands();setBrand(DEFAULTS.brand,DEFAULTS.model);syncNote();
   <\/script>
 </body>
