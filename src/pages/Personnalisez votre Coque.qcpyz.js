@@ -5,6 +5,7 @@ import { getCoqueWidgetSrc } from 'public/coqueWidget';
 const PRODUCT_ID = 'b6d8773f-c0e6-47f4-b7ba-2b6c9772c710';
 const HTML_WIDGET_ID = '#html1';
 const DEFAULT_TREATMENT = 'Normal';
+const MINI_CART_OPEN_DELAY_MS = 800;
 
 function convertWixUrlToPublic(wixUrl) {
     if (!wixUrl || !wixUrl.startsWith('wix:image://v1/')) {
@@ -51,6 +52,12 @@ function notifyWidget(type, message, extraData = {}) {
     });
 }
 
+function wait(milliseconds) {
+    return new Promise((resolve) => {
+        setTimeout(resolve, milliseconds);
+    });
+}
+
 $w.onReady(function () {
     $w(HTML_WIDGET_ID).src = getCoqueWidgetSrc();
 
@@ -67,7 +74,7 @@ $w.onReady(function () {
 
         if (!modeleChoisi || !imageDataUrl) {
             console.error('Configuration incomplete for add_to_cart.', payload);
-            notifyWidget('add_to_cart_error', 'Veuillez choisir un modele et une image.');
+            notifyWidget('add_to_cart_error', 'Veuillez choisir un modèle et une image.');
             return;
         }
 
@@ -105,13 +112,14 @@ $w.onReady(function () {
                 }
             }
 
+            await wait(MINI_CART_OPEN_DELAY_MS);
             cart.showMiniCart();
-            notifyWidget('add_to_cart_success', 'Produit ajoute au panier.', {
+            notifyWidget('add_to_cart_success', 'Produit ajouté au panier.', {
                 imageUrl: uploadedUrlPublic
             });
         } catch (error) {
             console.error('Failed to add coque product to cart.', error);
-            notifyWidget('add_to_cart_error', 'Une erreur est survenue. Veuillez reessayer.');
+            notifyWidget('add_to_cart_error', 'Une erreur est survenue. Veuillez réessayer.');
         }
     });
 });
